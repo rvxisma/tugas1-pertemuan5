@@ -1,0 +1,69 @@
+<HTML>
+<HEAD>
+    <TITLE> Contoh Hyperlink </TITLE>
+
+    <script>
+        function tampilkan(id) {
+            document.getElementById("home").style.display = "none";
+            document.getElementById("profil").style.display = "none";
+            document.getElementById("about").style.display = "none";
+            document.getElementById("gallery").style.display = "none";
+            document.getElementById("kontak").style.display = "none";
+
+            document.getElementById(id).style.display = "block";
+        }
+    </script>
+</HEAD>
+
+<body onload="tampilkan('home')">
+
+<hr color="blue" size=3>
+<a href="#" onclick="tampilkan('home')">Home</a> | 
+<a href="#" onclick="tampilkan('profil')">Profil</a>  | 
+<a href="#" onclick="tampilkan('about')">About</a>  | 
+<a href="#" onclick="tampilkan('gallery')">Gallery</a> |
+<a href="#" onclick="tampilkan('kontak')">Kontak</a>
+<hr color="blue" size=3>
+
+<div id="home">
+    <h2>Home</h2> 
+    Assalamualaikum.Wr.Wb<br><br>
+    Apakabar semua. Salam kenal ini adalah web perdanaku.<br>
+    Web ini berisi informasi tentang kegemaranku. <br> 
+    Semoga web ini dapat menginspirasi Anda pada waktu liburan.<br><br>
+
+    <a href="http://www.google.com">google</a> 
+    Silahkan hubungi saya jika ada yg ingin didiskusikan 
+    <a href="mailto:endarnirmala.gmail.com">email</a>
+</div>
+
+<div id="profil">
+    <h2>Profil</h2>
+    Halo, perkenalkan nama saya Risma Nur Aisyatu Salma dengan NIM 252505019.<br><br>
+Saya merupakan mahasiswa di Ma’soem University.<br>
+Saya memiliki minat dalam mempelajari hal-hal baru, khususnya di bidang teknologi dan coding.<br>
+Saat ini saya sedang belajar membuat website sederhana menggunakan HTML sebagai langkah awal dalam memahami pengembangan web.<br>
+Di waktu luang, saya hobby menonton drakor, membaca buku novel, mengedit foto&vidio serta mencoba berbagai hal kreatif untuk menambah wawasan & pengalaman.
+</div>
+
+<div id="about">
+    <h2>About</h2>
+    Saya adalah seorang mahasiswi yang memiliki ketertarikan terhadap perkembangan teknologi digital.<br><br>
+    Saat ini saya sedang mempelajari dasar-dasar pembuatan website sebagai langkah awal untuk memahami dunia pengembangan web.<br>
+</div>
+
+<div id="gallery">
+    <h2>Gallery</h2>
+    <img src="poto/WhatsApp Image 2026-03-02 at 07.47.00.jpg" width="300" height="200">
+    <img src="poto/WhatsApp Image 2026-03-02 at 07.47.01.jpg" width="300" height="200">
+</div>
+
+<div id="kontak">
+    <h2>Kontak</h2>
+    Instragam:rvxisma
+    <a href="mailto:rismanuraisyatusalam367@gmail.com"></a>
+    
+</div>
+
+</body>
+</HTML>
